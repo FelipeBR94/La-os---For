@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Informe um número positivo</h1>
+        <input type="number" id="numero">
+        <button onclick="somaValores()">Somar</button>
+        <p id="resultado"></p>
+    </div>
+
+    <script>
+        function somaValores(){
+            var valPositivo = document.getElementById('numero').value
+            var soma = 0;
+            for(var i = 0; i<=valPositivo; i++){
+                soma +=i;
+            }
+            document.getElementById('resultado').innerText = soma;
+        }
+    </script>
+</body>
+</html>
